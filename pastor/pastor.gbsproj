@@ -5,6 +5,10 @@
         "worldScrollX": 0,
         "worldScrollY": 0,
         "zoom": 100,
+        "customColorsWhite": "E8F8E0",
+        "customColorsLight": "B0F088",
+        "customColorsDark": "509878",
+        "customColorsBlack": "202850",
         "startX": 9,
         "startY": 9,
         "startDirection": "down",
@@ -25,7 +29,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "placeholder.png",
-            "_v": 1561399228204
+            "_v": 1596394738677
         }
     ],
     "spriteSheets": [
@@ -35,7 +39,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "actor.png",
-            "_v": 1561399228204
+            "_v": 1596394738683
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -43,23 +47,66 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "actor_animated.png",
-            "_v": 1561399228204
+            "_v": 1596394738683
         },
         {
-            "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
-            "name": "static",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "static.png",
-            "_v": 1561399228204
+            "id": "a150cf4c-9ff4-4624-b086-3697e727801c",
+            "name": "Pastor movements",
+            "numFrames": 13,
+            "type": "animated",
+            "filename": "Pastor movements.png",
+            "_v": 1596394738684
         }
     ],
     "music": [
         {
+            "id": "1de630a1-9276-4ef1-bcb8-ded404fc12f7",
+            "name": "kirche",
+            "filename": "kirche.mod",
+            "_v": 1596394738610
+        },
+        {
+            "id": "c88caf8d-bee8-46bb-a34a-69587b86440c",
+            "name": "kirche.AutoSave.20200802.203602.mod",
+            "filename": "kirche.mod.AutoSave.20200802.203602.mod",
+            "_v": 1596394738610
+        },
+        {
+            "id": "0943a35a-ceee-42d8-b47c-23560f8cbda2",
+            "name": "kirche.AutoSave.20200802.204602.mod",
+            "filename": "kirche.mod.AutoSave.20200802.204602.mod",
+            "_v": 1596394738610
+        },
+        {
+            "id": "088e08c8-db46-432b-a4d0-a0b579033393",
+            "name": "kirche.AutoSave.20200802.205602.mod",
+            "filename": "kirche.mod.AutoSave.20200802.205602.mod",
+            "_v": 1596394738610
+        },
+        {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1561399228201
+            "_v": 1596394738610
+        },
+        {
+            "id": "9550e712-fbc2-4d9b-9274-bf58ac66b25b",
+            "name": "template.AutoSave.20200802.163842.mod",
+            "filename": "template.mod.AutoSave.20200802.163842.mod",
+            "_v": 1596394738610
+        },
+        {
+            "id": "fcb2224f-1ea5-479e-81db-45ff3539401d",
+            "name": "template.AutoSave.20200802.164842.mod",
+            "filename": "template.mod.AutoSave.20200802.164842.mod",
+            "_v": 1596394738611
+        },
+        {
+            "id": "e1d719b7-fd5b-4843-81f9-3c1fc29076e8",
+            "name": "template.AutoSave.20200802.165842.mod",
+            "filename": "template.mod.AutoSave.20200802.165842.mod",
+            "_v": 1596394738611
         }
-    ]
+    ],
+    "customEvents": []
 }
