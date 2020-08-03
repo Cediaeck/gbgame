@@ -9,18 +9,68 @@
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
         "customColorsBlack": "202850",
-        "startX": 9,
-        "startY": 9,
+        "startX": 1,
+        "startY": 25,
         "startDirection": "down",
-        "startSceneId": "",
+        "startSceneId": "471a8056-f113-438d-bc60-92ad60390fbf",
         "playerSpriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd"
     },
-    "scenes": [],
+    "scenes": [
+        {
+            "name": "Scene 1",
+            "backgroundId": "f454c449-a036-4af2-a0da-8de91d9baeca",
+            "width": 32,
+            "height": 32,
+            "collisions": [],
+            "id": "471a8056-f113-438d-bc60-92ad60390fbf",
+            "x": 201,
+            "y": 56,
+            "actors": [
+                {
+                    "spriteSheetId": "6250ad6f-e992-425b-a429-71006a04d812",
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "6ddc3a35-e3a3-458c-aeed-529c1fd706b1",
+                    "x": 21,
+                    "y": 25,
+                    "frame": 0,
+                    "startScript": [
+                        {
+                            "id": "d04ea633-5277-4e9a-8d2a-08039d16d898",
+                            "command": "EVENT_ACTOR_SET_DIRECTION",
+                            "args": {
+                                "actorId": "$self$",
+                                "direction": "left",
+                                "__collapse": false
+                            }
+                        },
+                        {
+                            "id": "768e8948-360b-4b0b-ad8f-4b3356a40809",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ],
+            "triggers": []
+        }
+    ],
     "_version": "1.2.0",
     "author": "chowe",
     "name": "pastor",
     "variables": [],
     "backgrounds": [
+        {
+            "id": "f454c449-a036-4af2-a0da-8de91d9baeca",
+            "name": "Background 1",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Background 1.png",
+            "_v": 1596396838009
+        },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
             "name": "placeholder",
@@ -29,7 +79,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "placeholder.png",
-            "_v": 1596394738677
+            "_v": 1596396838009
         }
     ],
     "spriteSheets": [
@@ -39,7 +89,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "actor.png",
-            "_v": 1596394738683
+            "_v": 1596396838009
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -47,15 +97,79 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "actor_animated.png",
-            "_v": 1596394738683
+            "_v": 1596396838009
         },
         {
-            "id": "a150cf4c-9ff4-4624-b086-3697e727801c",
-            "name": "Pastor movements",
-            "numFrames": 13,
+            "id": "de251722-6fd9-4875-bd00-931d1457eee3",
+            "name": "blob enemy 2",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "blob enemy 2.png",
+            "_v": 1596396838009
+        },
+        {
+            "id": "3027d8c6-c771-4dd9-90df-af0681349c6d",
+            "name": "ceremony dagger",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "ceremony dagger.png",
+            "_v": 1596396838009
+        },
+        {
+            "id": "e26a519f-7187-4f80-9143-9492b69a1a6e",
+            "name": "enemy 1",
+            "numFrames": 2,
             "type": "animated",
-            "filename": "Pastor movements.png",
-            "_v": 1596394738684
+            "filename": "enemy 1.png",
+            "_v": 1596396838009
+        },
+        {
+            "id": "a84ab0dc-a028-4827-954b-771d68efbd4e",
+            "name": "enemy 2",
+            "numFrames": 5,
+            "type": "animated",
+            "filename": "enemy 2.png",
+            "_v": 1596396838009
+        },
+        {
+            "id": "e6f326e0-b12b-479d-b9ab-99578403477e",
+            "name": "epic sword 1",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "epic sword 1.png",
+            "_v": 1596396838009
+        },
+        {
+            "id": "a291b320-089a-47ef-aecc-2bba70e956f8",
+            "name": "Kreuz weapon ",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Kreuz weapon .png",
+            "_v": 1596396838009
+        },
+        {
+            "id": "a7e8a65a-931e-4e23-b966-48837e2bcc93",
+            "name": "legendary sword 1",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "legendary sword 1.png",
+            "_v": 1596396838009
+        },
+        {
+            "id": "743e49f5-76f9-44c8-b4ca-9101fc911a62",
+            "name": "NPC old man ",
+            "numFrames": 5,
+            "type": "animated",
+            "filename": "NPC old man .png",
+            "_v": 1596396838009
+        },
+        {
+            "id": "6250ad6f-e992-425b-a429-71006a04d812",
+            "name": "Pastor all movements including punching",
+            "numFrames": 14,
+            "type": "animated",
+            "filename": "Pastor all movements including punching.png",
+            "_v": 1596396838009
         }
     ],
     "music": [
@@ -63,49 +177,49 @@
             "id": "1de630a1-9276-4ef1-bcb8-ded404fc12f7",
             "name": "kirche",
             "filename": "kirche.mod",
-            "_v": 1596394738610
+            "_v": 1596396837927
         },
         {
             "id": "c88caf8d-bee8-46bb-a34a-69587b86440c",
             "name": "kirche.AutoSave.20200802.203602.mod",
             "filename": "kirche.mod.AutoSave.20200802.203602.mod",
-            "_v": 1596394738610
+            "_v": 1596396837927
         },
         {
             "id": "0943a35a-ceee-42d8-b47c-23560f8cbda2",
             "name": "kirche.AutoSave.20200802.204602.mod",
             "filename": "kirche.mod.AutoSave.20200802.204602.mod",
-            "_v": 1596394738610
+            "_v": 1596396837927
         },
         {
             "id": "088e08c8-db46-432b-a4d0-a0b579033393",
             "name": "kirche.AutoSave.20200802.205602.mod",
             "filename": "kirche.mod.AutoSave.20200802.205602.mod",
-            "_v": 1596394738610
+            "_v": 1596396837927
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1596394738610
+            "_v": 1596396837927
         },
         {
             "id": "9550e712-fbc2-4d9b-9274-bf58ac66b25b",
             "name": "template.AutoSave.20200802.163842.mod",
             "filename": "template.mod.AutoSave.20200802.163842.mod",
-            "_v": 1596394738610
+            "_v": 1596396837927
         },
         {
             "id": "fcb2224f-1ea5-479e-81db-45ff3539401d",
             "name": "template.AutoSave.20200802.164842.mod",
             "filename": "template.mod.AutoSave.20200802.164842.mod",
-            "_v": 1596394738611
+            "_v": 1596396837927
         },
         {
             "id": "e1d719b7-fd5b-4843-81f9-3c1fc29076e8",
             "name": "template.AutoSave.20200802.165842.mod",
             "filename": "template.mod.AutoSave.20200802.165842.mod",
-            "_v": 1596394738611
+            "_v": 1596396837927
         }
     ],
     "customEvents": []
