@@ -9,11 +9,12 @@
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
         "customColorsBlack": "202850",
-        "startX": 2,
+        "startX": 7,
         "startY": 14,
-        "startDirection": "right",
+        "startDirection": "left",
         "startSceneId": "96ea7711-ab42-42b3-9426-2d782f299f6b",
-        "playerSpriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd"
+        "playerSpriteSheetId": "b7661259-be4d-4a9f-bc51-1055f1360730",
+        "startAnimSpeed": "4"
     },
     "scenes": [
         {
@@ -21,23 +22,111 @@
             "backgroundId": "78eb9f7a-8ac8-48af-9e81-ceafd2b86a07",
             "width": 32,
             "height": 20,
-            "collisions": [],
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
             "id": "96ea7711-ab42-42b3-9426-2d782f299f6b",
-            "x": 60,
-            "y": 75,
+            "x": 216.85714285714266,
+            "y": 332.57142857142856,
             "actors": [
                 {
-                    "spriteSheetId": "6250ad6f-e992-425b-a429-71006a04d812",
-                    "movementType": "static",
+                    "spriteSheetId": "de251722-6fd9-4875-bd00-931d1457eee3",
+                    "movementType": "faceInteraction",
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "e0854cc2-a153-4eb0-91de-e5deb6fb7316",
                     "x": 25,
-                    "y": 15
+                    "y": 12,
+                    "animate": true
                 }
             ],
-            "triggers": []
+            "triggers": [],
+            "script": [
+                {
+                    "id": "1dd02ef3-4ef6-4674-88f8-72caa5f54f59",
+                    "command": "EVENT_END"
+                }
+            ]
         }
     ],
     "_version": "1.2.0",
@@ -46,6 +135,16 @@
     "variables": [],
     "backgrounds": [
         {
+            "id": "9f055b61-8f25-469a-804c-ef2417da9c00",
+            "name": "Background 2",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Background 2.png",
+            "_v": 1607423703185
+        },
+        {
             "id": "78eb9f7a-8ac8-48af-9e81-ceafd2b86a07",
             "name": "bg1",
             "width": 32,
@@ -53,7 +152,7 @@
             "imageWidth": 256,
             "imageHeight": 160,
             "filename": "bg1.png",
-            "_v": 1596479562839
+            "_v": 1607423703183
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -63,7 +162,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "placeholder.png",
-            "_v": 1596479562838
+            "_v": 1607423703185
         }
     ],
     "spriteSheets": [
@@ -73,7 +172,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "actor.png",
-            "_v": 1596479562839
+            "_v": 1607423703185
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -81,7 +180,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "actor_animated.png",
-            "_v": 1596479562839
+            "_v": 1607423703185
         },
         {
             "id": "de251722-6fd9-4875-bd00-931d1457eee3",
@@ -89,7 +188,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "blob enemy 2.png",
-            "_v": 1596479562839
+            "_v": 1607423703185
         },
         {
             "id": "3027d8c6-c771-4dd9-90df-af0681349c6d",
@@ -97,7 +196,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "ceremony dagger.png",
-            "_v": 1596479562839
+            "_v": 1607423703185
         },
         {
             "id": "e26a519f-7187-4f80-9143-9492b69a1a6e",
@@ -105,7 +204,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "enemy 1.png",
-            "_v": 1596479562839
+            "_v": 1607423703185
         },
         {
             "id": "a84ab0dc-a028-4827-954b-771d68efbd4e",
@@ -113,7 +212,7 @@
             "numFrames": 5,
             "type": "animated",
             "filename": "enemy 2.png",
-            "_v": 1596479562840
+            "_v": 1607423703185
         },
         {
             "id": "e6f326e0-b12b-479d-b9ab-99578403477e",
@@ -121,7 +220,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "epic sword 1.png",
-            "_v": 1596479562840
+            "_v": 1607423703185
         },
         {
             "id": "a291b320-089a-47ef-aecc-2bba70e956f8",
@@ -129,7 +228,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Kreuz weapon .png",
-            "_v": 1596479562840
+            "_v": 1607423703185
         },
         {
             "id": "a7e8a65a-931e-4e23-b966-48837e2bcc93",
@@ -137,7 +236,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "legendary sword 1.png",
-            "_v": 1596479562839
+            "_v": 1607423703190
         },
         {
             "id": "743e49f5-76f9-44c8-b4ca-9101fc911a62",
@@ -145,7 +244,15 @@
             "numFrames": 5,
             "type": "animated",
             "filename": "NPC old man .png",
-            "_v": 1596479562840
+            "_v": 1607423703190
+        },
+        {
+            "id": "b7661259-be4d-4a9f-bc51-1055f1360730",
+            "name": "Pastor",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Pastor.png",
+            "_v": 1607423703185
         },
         {
             "id": "6250ad6f-e992-425b-a429-71006a04d812",
@@ -153,57 +260,81 @@
             "numFrames": 14,
             "type": "animated",
             "filename": "Pastor all movements including punching.png",
-            "_v": 1596479562840
+            "_v": 1607423703194
         }
     ],
     "music": [
         {
+            "id": "2b2c1e6d-98a4-4b27-ba9a-63c717a1a3d0",
+            "name": "boss",
+            "filename": "boss.mod",
+            "_v": 1607423703167
+        },
+        {
+            "id": "3e07d682-362e-4166-85ff-48405bf81fd0",
+            "name": "boss.AutoSave.20200803.221716.mod",
+            "filename": "boss.mod.AutoSave.20200803.221716.mod",
+            "_v": 1607423703167
+        },
+        {
+            "id": "c54d8a5d-1e47-4c60-94ca-ac8c9118eff6",
+            "name": "boss.AutoSave.20200803.222716.mod",
+            "filename": "boss.mod.AutoSave.20200803.222716.mod",
+            "_v": 1607423703167
+        },
+        {
+            "id": "3cb48420-8e77-4f15-b868-66022f3067eb",
+            "name": "boss.AutoSave.20200803.223717.mod",
+            "filename": "boss.mod.AutoSave.20200803.223717.mod",
+            "_v": 1607423703167
+        },
+        {
             "id": "1de630a1-9276-4ef1-bcb8-ded404fc12f7",
             "name": "kirche",
             "filename": "kirche.mod",
-            "_v": 1596479562786
-        },
-        {
-            "id": "c88caf8d-bee8-46bb-a34a-69587b86440c",
-            "name": "kirche.AutoSave.20200802.203602.mod",
-            "filename": "kirche.mod.AutoSave.20200802.203602.mod",
-            "_v": 1596479562787
+            "_v": 1607423703167
         },
         {
             "id": "0943a35a-ceee-42d8-b47c-23560f8cbda2",
             "name": "kirche.AutoSave.20200802.204602.mod",
             "filename": "kirche.mod.AutoSave.20200802.204602.mod",
-            "_v": 1596479562787
+            "_v": 1607423703167
         },
         {
             "id": "088e08c8-db46-432b-a4d0-a0b579033393",
             "name": "kirche.AutoSave.20200802.205602.mod",
             "filename": "kirche.mod.AutoSave.20200802.205602.mod",
-            "_v": 1596479562787
+            "_v": 1607423703167
+        },
+        {
+            "id": "6f1d26b5-853c-49a2-bcae-98b9109808dc",
+            "name": "kirche.AutoSave.20200803.205412.mod",
+            "filename": "kirche.mod.AutoSave.20200803.205412.mod",
+            "_v": 1607423703167
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1596479562787
+            "_v": 1607423703167
         },
         {
             "id": "9550e712-fbc2-4d9b-9274-bf58ac66b25b",
             "name": "template.AutoSave.20200802.163842.mod",
             "filename": "template.mod.AutoSave.20200802.163842.mod",
-            "_v": 1596479562787
+            "_v": 1607423703167
         },
         {
             "id": "fcb2224f-1ea5-479e-81db-45ff3539401d",
             "name": "template.AutoSave.20200802.164842.mod",
             "filename": "template.mod.AutoSave.20200802.164842.mod",
-            "_v": 1596479562787
+            "_v": 1607423703167
         },
         {
             "id": "e1d719b7-fd5b-4843-81f9-3c1fc29076e8",
             "name": "template.AutoSave.20200802.165842.mod",
             "filename": "template.mod.AutoSave.20200802.165842.mod",
-            "_v": 1596479562788
+            "_v": 1607423703167
         }
     ],
     "customEvents": []
